@@ -1,0 +1,43 @@
+.About {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    color: rgb(96, 96, 136);
+    font-family: sans-serif;
+  }
+  
+ 
+  
+  .education {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-left: 4px solid rgb(96, 96, 136);
+    box-shadow: 0 2px 6px rgb(96, 96, 136);
+  }
+  
+  .education h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: rgb(96, 96, 136);
+  }
+  
+  .institution {
+    font-size: 14px;
+    color: rgb(96, 96, 136);
+  }
+  
+  .date {
+    float: right;
+    font-size: 13px;
+    color: rgb(96, 96, 136);
+  }
+  
+  .education ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .education li {
+    margin-bottom: 8px;
+  }
+  

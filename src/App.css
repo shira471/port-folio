@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  background-color: #fbfafc; 
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* סרגל ניווט */
+.navbar {
+  background-color: #fbfafc;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar button {
+  background: none;
+  color:rgb(96, 96, 136);
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar button:hover {
+  transform: scale(1.2);
+
+}
+
+/* גוף הדף */
+main {
+  padding: 40px;
+  text-align: center;
 }
