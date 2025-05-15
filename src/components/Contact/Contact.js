@@ -1,6 +1,6 @@
 import React from "react";
 import './Contact.css';
-import { FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact=()=>(
     <section className='Contact'>
@@ -23,6 +23,13 @@ const Contact=()=>(
         <span>LinkedIn</span>
         </a>
     </div>
+    <div className="Contact-item">
+  <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" className="Contact-link">
+    <FaGithub className="Contact-icon" />
+    <span>GitHub</span>
+  </a>
+</div>
+
   </section>
 );
 
