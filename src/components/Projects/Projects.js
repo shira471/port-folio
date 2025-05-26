@@ -33,29 +33,28 @@ const projects = [
 const Projects = () => {
   return (
     <section className="projects-container">
-  <div className="projects-row">
-    {projects.map((project, index) => (
-      <div key={index} className="project-card">
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-link"
-        >
-          <h2 className="project-title">{project.title}</h2>
-          <p className="project-description">{project.description}</p>
-        </a>
-        {project.videoUrl && (
-          <video className="project-video" controls>
-            <source src={project.videoUrl} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        )}
-      </div>
-    ))}
-  </div>
-</section>
+      <div className="projects-row">
+        {projects.map((project, index) => (
+          <a
+            key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card"
+          >
+            <h2 className="project-title">{project.title}</h2>
+            <p className="project-description">{project.description}</p>
 
+              {project.videoUrl && (
+            <video className="project-video" controls>
+            <source src={project.videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            )}
+          </a>
+        ))}
+      </div>
+    </section>
   );
 };
 
