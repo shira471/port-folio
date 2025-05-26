@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 
 const Projects = () => {
-  const baseUrl = "https://shira471.github.io/port-folio";
+  const baseUrl = "https://shira471.github.io/port-folio/public";
 
   const projects = [
     {
