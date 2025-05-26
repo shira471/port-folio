@@ -10,8 +10,7 @@ const Projects = () => {
       description:
         "Developed a personal website using React to showcase my resume in English. The site features a clean, responsive user interface and presents my background and skills in a professional and accessible manner.",
       link: "https://github.com/shira471/port-folio",
-      videoUrl: "https://shira471.github.io/port-folio/website-video.mp4"
-",
+      videoUrl: "https://shira471.github.io/port-folio/website-video.mp4",
     },
     {
       title: "Cake Recognition App – AI-powered cake identification and allergen detection",
