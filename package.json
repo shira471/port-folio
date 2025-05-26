@@ -20,8 +20,7 @@
   "build": "react-scripts build",
   "test": "react-scripts test",
   "eject": "react-scripts eject",
-  "copy-videos": "copy public\\*.mp4 build\\",
-  "predeploy": "npm run build && npm run copy-videos",
+  "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
 },
   "eslintConfig": {
@@ -42,6 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://shira471.github.io/port-folio"
+  "homepage": "https://shira471.github.io/port-folio/"
 
 }
