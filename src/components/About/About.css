@@ -1,6 +1,6 @@
 .timeline {
   display: flex;
-  flex-direction:row-reverse;
+  flex-direction:row;
   gap: 30px;
   align-items: center;
   padding: 10px 20px;
