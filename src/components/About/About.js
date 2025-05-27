@@ -1,6 +1,5 @@
 import React from "react";
 import "./About.css";
-import { FaUniversity, FaCertificate, FaCode } from "react-icons/fa";
 
 const About = () => (
   <section className="timeline-container">
