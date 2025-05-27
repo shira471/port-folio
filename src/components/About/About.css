@@ -1,100 +1,61 @@
-.timeline-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  overflow-x: auto;
-  height: 600px;
-}
-
-.timeline {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 220px;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: linear-gradient(
-    to right,
-    rgb(96, 96, 136),
-    rgb(145, 145, 200)
-  );
-  border-radius: 2px;
-  animation: pulse 3s infinite;
-  z-index: 1;
-}
-
-/* אנימציה עדינה לציר הזמן */
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 5px rgb(96, 96, 136);
+@media (max-width: 768px) {
+  .timeline-container {
+    height: auto;
+    overflow-x: visible;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    margin-top: 20px;
   }
-  50% {
-    box-shadow: 0 0 15px rgb(145, 145, 200);
+
+  .timeline {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
   }
-  100% {
-    box-shadow: 0 0 5px rgb(96, 96, 136);
+
+  .timeline::before {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    transform: translateX(-50%);
+    background: linear-gradient(
+      to bottom,
+      rgb(96, 96, 136),
+      rgb(145, 145, 200)
+    );
   }
-}
 
-.timeline-item {
-  position: relative;
-  margin-right: 250px;
-}
+  .timeline-item {
+    margin: 40px 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
 
-.timeline-item:last-child {
-  margin-right: 0;
-}
+  .timeline-ellipse {
+    width: 120px;
+    height: 120px;
+    font-size: 0.8em;
+  }
 
-.timeline-ellipse {
-  position: relative;
-  background-color: rgb(96, 96, 136);
-  color: white;
-  border-radius: 50%;
-  width: 180px;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-  z-index: 2;
-}
+  .ellipse-label {
+    font-size: 0.8em;
+    padding: 5px;
+    text-align: center;
+  }
 
-.timeline-ellipse:hover {
-  transform: scale(1.05);
-}
-
-.ellipse-label {
-  font-size: 0.9em;
-}
-
-.tooltip {
-  display:block;
-  position: absolute;
-  top: 190px; 
-  left: -50px;
-  background-color: white;
-  border: 1px solid rgb(96, 96, 136);
-  border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  z-index: 5;
-  width: 400px;
-}
-
-.timeline-item:hover .tooltip {
-  display: block;
-}
-
-.icon {
-  margin-right: 8px;
-  font-size: 1.5em;
+  .tooltip {
+    position: static;
+    width: 100%;
+    max-width: 360px;
+    margin-top: 10px;
+    left: auto;
+    top: auto;
+    font-size: 0.85em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 }
