@@ -8,7 +8,7 @@ const About = () => (
       <div className="timeline-item">
         <div className="card-graphic">
              <img
-              src="/Port-folio/graffic.jpeg"
+              src="/port-folio/graffic.jpeg"
               alt="Graphic Certificate"
               className="graphic-image"
               />
@@ -29,7 +29,7 @@ const About = () => (
       <div className="timeline-item">
              <div className="card-bio">
              <img
-              src="/Port-folio/bio.jpeg"
+              src="/port-folio/bio.jpeg"
               alt="bio Certificate"
               className="bio-image"
               />
@@ -58,7 +58,7 @@ const About = () => (
          
   <div className="card-header">
     <img
-              src="/Port-folio/skill.jpeg"
+              src="/port-folio/skill.jpeg"
               alt="skill Certificate"
               className="skill-image"
               />
