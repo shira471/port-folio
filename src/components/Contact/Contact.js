@@ -1,6 +1,6 @@
 import React from "react";
 import './Contact.css';
-import { FaPhone, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaLinkedin, FaGithub, FaFileDownload } from 'react-icons/fa';
 
 const Contact=()=>(
     <section className='Contact'>
@@ -29,7 +29,12 @@ const Contact=()=>(
     <span>GitHub</span>
   </a>
 </div>
-
+<div className="Cv-item">
+  <a href="/port-folio/resume.dox" download className="Contact-link">
+    <FaFileDownload className="Contact-icon" />
+    <span>Download CV</span>
+  </a>
+</div>
   </section>
 );
 
