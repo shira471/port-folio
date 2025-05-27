@@ -30,7 +30,7 @@ const Contact=()=>(
   </a>
 </div>
 <div className="Cv-item">
-  <a href="/port-folio/resume.dox" download className="Contact-link">
+  <a href="/port-folio/resume.docx" download className="Contact-link">
     <FaFileDownload className="Contact-icon" />
     <span>Download CV</span>
   </a>
