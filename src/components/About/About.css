@@ -1,61 +1,61 @@
+.timeline {
+  display: flex;
+  flex-direction:column-reverse;
+  gap: 20px;
+  align-items: center;
+}
+
+.timeline-item {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.timeline-card {
+  background: white;
+  border: 2px solid rgb(96, 96, 136);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: rgb(96, 96, 136);
+}
+
+.card-title {
+  margin-left: 8px;
+}
+
+.card-content {
+  font-size: 0.95em;
+  color: #333;
+}
+
+/* התאמה לטלפון */
 @media (max-width: 768px) {
   .timeline-container {
-    height: auto;
-    overflow-x: visible;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-    margin-top: 20px;
+    padding: 10px;
   }
 
-  .timeline {
-    flex-direction: column;
-    height: auto;
-    align-items: center;
+  .timeline-card {
+    padding: 16px;
   }
 
-  .timeline::before {
-    top: 0;
-    left: 50%;
-    width: 4px;
-    height: 100%;
-    transform: translateX(-50%);
-    background: linear-gradient(
-      to bottom,
-      rgb(96, 96, 136),
-      rgb(145, 145, 200)
-    );
+  .card-header {
+    font-size: 1em;
   }
 
-  .timeline-item {
-    margin: 40px 0;
-    margin-right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-
-  .timeline-ellipse {
-    width: 120px;
-    height: 120px;
-    font-size: 0.8em;
-  }
-
-  .ellipse-label {
-    font-size: 0.8em;
-    padding: 5px;
-    text-align: center;
-  }
-
-  .tooltip {
-    position: static;
-    width: 100%;
-    max-width: 360px;
-    margin-top: 10px;
-    left: auto;
-    top: auto;
-    font-size: 0.85em;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .card-content {
+    font-size: 0.9em;
   }
 }
