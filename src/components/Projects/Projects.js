@@ -8,7 +8,7 @@ const projects = [
     description:
       "Developed a personal website using React to showcase my resume in English. The site features a clean, responsive user interface and presents my background and skills in a professional and accessible manner.",
     link: "https://github.com/shira471/port-folio",
-    youtubeUrl: "https://youtu.be/Gv3YC6vpeKg",
+    youtubeUrl: "https://youtu.be/N-Jv1qdMVnE",
   },
   {
     title: "Cake Recognition App – AI-powered cake identification and allergen detection",
@@ -66,6 +66,5 @@ const Projects = () => {
 </section>
   );
 };
-
 
 export default Projects;
