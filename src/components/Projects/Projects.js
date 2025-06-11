@@ -27,7 +27,7 @@ const projects = [
   {
     title: "Bioinformatics Project on Parkinson's Disease",
     description:
-      "Developed a Python tool to identify drugs and molecules related to Parkinson's disease using NCBI data mining techniques. Created algorithms for automated data extraction and analysis. Supervised by Dr. Avraham Samson, this project will be published in Nature magazine.",
+      "Developed a Python tool to identify drugs and molecules related to Parkinson's disease using NCBI data mining techniques. Created algorithms for automated data extraction and analysis. Supervised by Dr. Avraham Samson.",
   },
 ];
 
